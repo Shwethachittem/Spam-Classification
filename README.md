@@ -1,55 +1,54 @@
-Spam Message Classification
-This project demonstrates how to classify SMS messages as Spam or Ham (Not Spam) using Natural Language Processing (NLP) and Machine Learning techniques. The models used include:
+# Spam Message Classification
 
-1)Logistic Regression
+This project demonstrates how to classify SMS messages as **Spam** or **Ham** (Not Spam) using **Natural Language Processing (NLP)** and **Machine Learning** techniques. The models used include:
 
-2)Random Forest
+1. **Logistic Regression**
+2. **Random Forest**
+3. **Naive Bayes**
 
-3)Naive Bayes
+---
 
-Dataset
-The project uses the popular SMS Spam Collection Dataset (spam.csv), which contains labeled SMS messages as either ham (legitimate) or spam.
-https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
-Label	Message
-ham	"Hey, are we still meeting today?"
-spam	"You’ve won a free iPhone! Click here to claim."
+##  Dataset
 
-Techniques Used
-Text Preprocessing
+The project uses the popular SMS Spam Collection Dataset (`spam.csv`), which contains labeled SMS messages as either `ham` (legitimate) or `spam`.
 
-Lowercasing
+📎 [Dataset on Kaggle](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)
 
-Removing special characters
+| Label | Message |
+|-------|---------|
+| ham   | "Hey, are we still meeting today?" |
+| spam  | "You’ve won a free iPhone! Click here to claim." |
 
-Tokenization
+---
 
-Stopword removal
+## Techniques Used
 
-Lemmatization
+### Text Preprocessing
+- Lowercasing  
+- Removing special characters  
+- Tokenization  
+- Stopword removal  
+- Lemmatization
 
-Feature Extraction
+### Feature Extraction
+- TF-IDF Vectorization
 
-TF-IDF Vectorization
+### Classification Models
+- Logistic Regression  
+- Random Forest Classifier  
+- Multinomial Naive Bayes
 
-Classification Models
+---
 
-Logistic Regression
+## Evaluation Metrics
+- Accuracy  
+- Precision  
+- Recall  
+- F1-score
 
-Random Forest Classifier
+---
 
-Multinomial Naive Bayes
-
-Evaluation Metrics
-
-Accuracy
-
-Precision, Recall, F1-score
-
-Main libraries:
-
-pandas
-
-nltk
-
-scikit-learn
-
+## Main Libraries
+- `pandas`  
+- `nltk`  
+- `scikit-learn`
